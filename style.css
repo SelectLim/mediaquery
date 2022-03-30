@@ -1,0 +1,60 @@
+body {
+    margin: 0px;
+}
+h1 {
+    border: 5px black solid;
+    text-align: center;
+    padding: 40px;
+    margin: 0px;
+    color: purple;
+}
+.LSB {
+    border-right: 3px black solid;
+    width: 100px;
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+}
+.RSB {
+    border-left: 3px black solid;
+    width: 100px;
+    margin: 0px;
+    padding: 20px;
+    text-align:center;
+}
+#grid {
+    border: 5px purple solid;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+}
+.maintext {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.SB {
+    font-size: 22px;
+}
+#title {
+    color: purple;
+}
+@media (min-width: 1400px) {
+    #grid {
+        display: block;
+        border: none;
+    }
+    .RSB {
+        border-left: none;
+    }
+    .LSB {
+        border-right: none;
+    }
+}
+@media (max-width: 600px) {
+    div {
+        display: none;
+    }
